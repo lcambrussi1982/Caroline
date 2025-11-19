@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroline Canei | Designer de Unhas</title>
+  <meta name="description" content="Serviços de alongamento, esmaltação em gel, nail art e cuidados com as unhas. Agende um horário com a designer de unhas Caroline Canei.">
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonte do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="topo">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-logo">CC</span>
+        <div>
+          <h1 class="brand-name">Caroline Canei</h1>
+          <p class="brand-subtitle">Designer de Unhas</p>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="hero-tag">Unhas impecáveis, auto-estima lá em cima</span>
+        <h2>Unhas que contam a sua história com estilo e delicadeza.</h2>
+        <p>
+          Alongamentos, blindagem, esmaltação em gel e nail art exclusiva para
+          realçar a sua beleza em cada detalhe.
+        </p>
+        <div class="hero-actions">
+          <!-- Substitua o número abaixo pelo WhatsApp da Caroline -->
+          <a class="btn btn-primary" href="https://wa.me/5599999999999?text=Ol%C3%A1%20Caroline,%20quero%20agendar%20um%20hor%C3%A1rio%20para%20unhas." target="_blank" rel="noopener noreferrer">
+            Agendar pelo WhatsApp
+          </a>
+          <a class="btn btn-outline" href="#servicos">Ver serviços</a>
+        </div>
+        <div class="hero-badges">
+          <span>✨ Atendimento personalizado</span>
+          <span>💅 Materiais de alta qualidade</span>
+          <span>📍 Studio aconchegante</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-photo"></div>
+        <div class="hero-card-info">
+          <h3>Agenda da Semana</h3>
+          <ul id="agendaSemana">
+            <!-- Preenchido via JS -->
+          </ul>
+          <p class="hero-small">
+            *Horários sujeitos a confirmação. Chame no WhatsApp para reservar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container section-grid">
+      <div>
+        <h2>Sobre a Caroline</h2>
+        <p>
+          Oi, eu sou a <strong>Caroline Canei</strong>, apaixonada por beleza e
+          por transformar unhas em verdadeiras joias. Trabalho com cuidado,
+          paciência e muito carinho em cada atendimento.
+        </p>
+        <p>
+          Busco sempre me atualizar em técnicas modernas de alongamento,
+          acabamento natural e nail art, garantindo conforto, durabilidade e um
+          resultado que combina com o seu estilo.
+        </p>
+        <div class="sobre-highlights">
+          <div>
+            <strong>+X anos</strong>
+            <span>de experiência</span>
+          </div>
+          <div>
+            <strong>+Y clientes</strong>
+            <span>satisfeitas</span>
+          </div>
+          <div>
+            <strong>Higiene</strong>
+            <span>e segurança em 1º lugar</span>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-card">
+        <h3>Especialidades</h3>
+        <ul>
+          <li>Alongamento em gel</li>
+          <li>Banho de gel / blindagem</li>
+          <li>Esmaltação em gel</li>
+          <li>Nail art delicada e temática</li>
+          <li>Manutenção de alongamento</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section section-alt" id="servicos">
+    <div class="container">
+      <h2 class="section-title">Serviços</h2>
+      <p class="section-subtitle">
+        Escolha o serviço ideal para o seu momento.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card-servico">
+          <h3>Alongamento em Gel</h3>
+          <p>
+            Unhas alongadas, resistentes e com acabamento natural, perfeitas para
+            quem ama elegância no dia a dia.
+          </p>
+          <ul>
+            <li>Duração média de 20 a 30 dias</li>
+            <li>Formato e tamanho personalizados</li>
+            <li>Acabamento natural ou decorado</li>
+          </ul>
+          <div class="card-price">
+            <span class="label">a partir de</span>
+            <span class="price">R$ 120</span>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <h3>Banho de Gel / Blindagem</h3>
+          <p>
+            Reforço para unhas naturais, ideal para quem quer mais resistência
+            sem alongar.
+          </p>
+          <ul>
+            <li>Ajuda a evitar quebras e lascas</li>
+            <li>Acabamento liso e brilhante</li>
+            <li>Compatível com esmaltação em gel</li>
+          </ul>
+          <div class="card-price">
+            <span class="label">a partir de</span>
+            <span class="price">R$ 80</span>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <h3>Esmaltação em Gel</h3>
+          <p>
+            Cores intensas e brilho por muito mais tempo, perfeita para a
+            correria do dia a dia.
+          </p>
+          <ul>
+            <li>Duração média de 15 a 20 dias</li>
+            <li>Grande variedade de cores</li>
+            <li>Brilho e acabamento impecáveis</li>
+          </ul>
+          <div class="card-price">
+            <span class="label">a partir de</span>
+            <span class="price">R$ 70</span>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <h3>Nail Art</h3>
+          <p>
+            Detalhes exclusivos, desenhos delicados, glitter, pedras e muito
+            mais para unhas únicas.
+          </p>
+          <ul>
+            <li>Nail art minimalista ou elaborada</li>
+            <li>Temas para datas especiais</li>
+            <li>Personalização completa</li>
+          </ul>
+          <div class="card-price">
+            <span class="label">a partir de</span>
+            <span class="price">R$ 15</span>
+            <span class="small">por unha decorada</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfólio</h2>
+      <p class="section-subtitle">
+        Alguns estilos de unhas que você pode escolher.
+      </p>
+
+      <div class="portfolio-filtros">
+        <button class="btn-chip active" data-filter="todas">Todas</button>
+        <button class="btn-chip" data-filter="gel">Alongamento em gel</button>
+        <button class="btn-chip" data-filter="nailart">Nail art</button>
+        <button class="btn-chip" data-filter="esmalte">Esmaltação em gel</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Você pode trocar as imagens pelos seus próprios arquivos -->
+        <div class="portfolio-item" data-category="gel">
+          <div class="portfolio-thumb portfolio-thumb-1"></div>
+          <span>Alongamento em gel - clássico</span>
+        </div>
+        <div class="portfolio-item" data-category="nailart">
+          <div class="portfolio-thumb portfolio-thumb-2"></div>
+          <span>Nail art delicada</span>
+        </div>
+        <div class="portfolio-item" data-category="esmalte">
+          <div class="portfolio-thumb portfolio-thumb-3"></div>
+          <span>Esmaltação em gel - nude</span>
+        </div>
+        <div class="portfolio-item" data-category="nailart">
+          <div class="portfolio-thumb portfolio-thumb-4"></div>
+          <span>Nail art com glitter</span>
+        </div>
+        <div class="portfolio-item" data-category="gel">
+          <div class="portfolio-thumb portfolio-thumb-5"></div>
+          <span>Alongamento em gel - bailarina</span>
+        </div>
+        <div class="portfolio-item" data-category="esmalte">
+          <div class="portfolio-thumb portfolio-thumb-6"></div>
+          <span>Esmaltação em gel - vermelha</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section section-alt" id="depoimentos">
+    <div class="container">
+      <h2 class="section-title">Depoimentos</h2>
+      <p class="section-subtitle">
+        O que as clientes dizem sobre a experiência com a Caroline.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card-depoimento">
+          <p>
+            "Atendimento maravilhoso! Minhas unhas nunca duraram tanto tempo sem
+            quebrar. A Carol é super atenciosa e caprichosa."
+          </p>
+          <span class="author">Ana Paula</span>
+        </article>
+
+        <article class="card-depoimento">
+          <p>
+            "Perfeita! Mostrei uma referência e ela fez igual, até melhor. O
+            estúdio é super aconchegante, me sinto em casa."
+          </p>
+          <span class="author">Mariana Silva</span>
+        </article>
+
+        <article class="card-depoimento">
+          <p>
+            "Já faço alongamento há meses com a Caroline e nunca tive problema.
+            Unha linda, resistente e sempre na moda."
+          </p>
+          <span class="author">Juliana Rocha</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA SIMPLES -->
+  <section class="section" id="agenda">
+    <div class="container">
+      <h2 class="section-title">Agenda Rápida</h2>
+      <p class="section-subtitle">
+        Veja alguns horários de exemplo e fale comigo para confirmar.
+      </p>
+
+      <div class="agenda-grid">
+        <div class="agenda-card">
+          <h3>Como funciona</h3>
+          <ol>
+            <li>Escolha o dia e período que prefere.</li>
+            <li>Clique em "Agendar pelo WhatsApp".</li>
+            <li>Envie sua opção de horário e serviço desejado.</li>
+            <li>Vou confirmar com você e finalizar o agendamento.</li>
+          </ol>
+          <a class="btn btn-primary btn-full" href="https://wa.me/5599999999999?text=Ol%C3%A1%20Caroline,%20vi%20os%20hor%C3%A1rios%20no%20site%20e%20quero%20agendar." target="_blank" rel="noopener noreferrer">
+            Agendar pelo WhatsApp
+          </a>
+        </div>
+        <div class="agenda-card">
+          <h3>Horários sugeridos</h3>
+          <table class="agenda-tabela">
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Período</th>
+                <th>Observação</th>
+              </tr>
+            </thead>
+            <tbody id="agendaTabelaBody">
+              <!-- Preenchido via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section-alt" id="contato">
+    <div class="container contato-grid">
+      <div>
+        <h2 class="section-title">Contato</h2>
+        <p class="section-subtitle">
+          Tire dúvidas, faça um orçamento ou agende seu horário.
+        </p>
+
+        <ul class="contato-list">
+          <li><strong>WhatsApp:</strong> (00) 00000-0000</li>
+          <li><strong>Instagram:</strong> @carolinecanei_unhas</li>
+          <li><strong>Endereço:</strong> Informe aqui o bairro / cidade do estúdio</li>
+        </ul>
+
+        <p class="section-subtitle small">
+          *Preencha o formulário ao lado ou clique no botão do WhatsApp para falar direto comigo.
+        </p>
+      </div>
+
+      <form class="contato-form" id="contatoForm">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+        </div>
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required />
+        </div>
+        <div class="form-group">
+          <label for="servico">Serviço desejado</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione</option>
+            <option value="alongamento">Alongamento em gel</option>
+            <option value="banho">Banho de gel / blindagem</option>
+            <option value="esmalte">Esmaltação em gel</option>
+            <option value="nailart">Nail art</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Me conte como você gostaria das suas unhas :)"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          Enviar mensagem (simulado)
+        </button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="anoAtual"></span> Caroline Canei – Designer de Unhas. Todos os direitos reservados.</p>
+      <p class="footer-small">
+        Site desenvolvido para apresentação de portfólio.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
